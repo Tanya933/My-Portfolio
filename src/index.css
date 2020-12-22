@@ -1,13 +1,162 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Mulish', sans-serif;
+ 
+}
+.App{
+  
+}
+ 
+.nav-container{
+  
+  height: 80px;
+ 
+  padding:20px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: right;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#navlinkss{
+ 
+  position: absolute;
+  right:0px;
+}
+#navcolor{
+  padding:20px;
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.navlogo{
+ 
+  font-size:20px;
+    letter-spacing:15px;
+   
+  
+    font-weight:bold;
+    
+  }
+
+#navcolor:hover{
+  color:indigo;
+  text-decoration: underline indigo;
+}
+#navcolor:active{
+  color:blue;
+}
+.toggle-button{
+  display: none;
+}
+
+
+
+#homepage{
+ 
+  text-align: center;
+  margin-top:100px;
+  font-family: 'Mulish', sans-serif;
+  font-weight:80px;
+ 
+}
+#my-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+}
+#skill-button{
+  
+  position:relative;
+  top:10px;
+  background-color: white;
+  border-width: 0.5px;
+  padding:10px;
+  border-radius: 20px;
+  border-color:black;
+}
+#skill-button:hover{
+ 
+  background-color:black;
+  color:white;
+}
+
+#button-link{
+  text-decoration: none;
+  color:black;
+}
+#button-link:hover{
+  color:white;
+}
+
+#skillpage{
+  text-align: center;
+  
+}
+#lang-img{
+  width :100 px;
+  height:100px;
+  border-radius:50px;
+  margin:10px;
+}
+#contact-img{
+  width: 50px;
+  height:50px;
+  border-radius:50px;
+  margin: 20px 0px 20px 50px;
+}
+.container1{
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+}
+
+@media screen and (max-width:993px)
+{
+ 
+.toggle-button{
+  
+    display: inline-block;
+  }
+  #navlinkss {  
+  
+    position: fixed;
+   
+    top:50px;
+   right: -100%;
+    width: 100%;
+   height: 50%;
+   justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background-color:blue;
+    z-index: 1000;
+     
+ 
+  
+  }
+
+  .active{
+   
+      left:0%;
+   
+  }
+  #navcolor{
+  
+    font-size: 20px;
+    color:white;
+  }
+  #navcolor:hover{
+    color:black;
+    text-decoration: none;
+  }
+  
+ 
 }
